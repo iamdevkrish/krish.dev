@@ -33,6 +33,8 @@ const timelineContainer = document.getElementById('timeline-container');
 // Sample timeline data (replace this with your actual data)
 const timelineEntries = [
     { date: '2024-09-27', content: 'made changes to website to show my daily logs for next 100Days' },
+    { date: '2024-09-27', content: 'test' },
+    
    
     
     // Add more entries as needed
