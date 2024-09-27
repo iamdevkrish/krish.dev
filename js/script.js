@@ -32,8 +32,9 @@ const timelineContainer = document.getElementById('timeline-container');
 
 // Sample timeline data (replace this with your actual data)
 const timelineEntries = [
-    { date: '2024-09-27', content: 'made this timelineview for 100Days' },
     { date: '2024-09-27', content: 'see you tomorrow ;D' },
+    { date: '2024-09-27', content: 'made this timelineview for 100Days' },
+    
  
     // Add more entries as needed
 ];
