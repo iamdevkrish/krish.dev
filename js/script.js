@@ -32,11 +32,9 @@ const timelineContainer = document.getElementById('timeline-container');
 
 // Sample timeline data (replace this with your actual data)
 const timelineEntries = [
-    { date: '2024-09-27', content: 'made changes to website to show my daily logs for next 100Days' },
-    { date: '2024-09-27', content: 'test' },
-    
-   
-    
+    { date: '2024-09-27', content: 'made this timelineview for 100Days' },
+    { date: '2024-09-27', content: 'see you tomorrow ;D' },
+ 
     // Add more entries as needed
 ];
 
@@ -60,7 +58,11 @@ function createTimelineEntry(entry) {
 
 function populateTimeline() {
     timelineContainer.innerHTML = ''; // Clear existing entries
-    timelineEntries.forEach(entry => {
+    
+    // Sort entries in reverse chronological order
+    const sortedEntries = timelineEntries.sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+    sortedEntries.forEach(entry => {
         const entryElement = createTimelineEntry(entry);
         timelineContainer.appendChild(entryElement);
     });
